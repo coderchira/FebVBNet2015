@@ -88,6 +88,15 @@
         Next
         Console.ReadLine()
 
+        Dim Collection2 As New Collection
+        For index = 1 To 10
+            Collection2.Add(index)
+        Next
+        For Each value In Collection2
+            Console.WriteLine(value)
+        Next
+        Console.ReadLine()
+
         'While Loop
         'Dim index1 As Integer = 1
         'While index1 >= 1 And age < 25
