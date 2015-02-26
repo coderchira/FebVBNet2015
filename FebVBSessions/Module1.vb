@@ -1,6 +1,7 @@
 ﻿Module Module1
     Sub Main()
-        LogicDemo.DoThisAsWell()
+        'LogicDemo.DoThisAsWell()
+        Module2.AddCollections()
         ''What is a Program?
         ''   Data <---> Logic (Bidirectional relationship)
         ''   Data
