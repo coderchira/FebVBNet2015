@@ -19,8 +19,22 @@
     '   Type of parameters
     '   Return Type
 
+    'Access Specifiers
+    '   Public -- Default for Functions
+    '   Private -- Only accessible within the module where defined
+
+    'Scope of variables
+    '   Limited to where the variable is defined
+    '       If defined at function level, only accessible to that function
+    '       If defined within a loop/conditional statement, only accessible to that block
+
+    'Module level variable
+    Public name As String = "" ' This will be accessible outside the module as well
+    Dim name2 As String = "" ' Dim means Private by default
+
     Sub DoThis()
         'Body of the subroutine
+        name = "ruchira"
     End Sub
 
     Sub DoThisAsWell()
@@ -69,6 +83,7 @@
 
         'Nested if statements
         If name = "Ruchira" Then
+            Dim count As Integer = 10
             'Do this
             If age >= 25 Then
             ElseIf age = 40 Then
@@ -117,11 +132,14 @@
     End Function
 
     Function Calculation(flag As Boolean) As Integer
-
+        'Scope of variables
+        'age = 30
+        name = "Venkat"
         Return 0
     End Function
 
     Function Calculation(text As String) As String
+        name = "Vijay"
         Return "This is another way"
     End Function
 

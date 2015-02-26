@@ -1,7 +1,6 @@
 ﻿Module Module1
     Sub Main()
         LogicDemo.DoThisAsWell()
-
         ''What is a Program?
         ''   Data <---> Logic (Bidirectional relationship)
         ''   Data
