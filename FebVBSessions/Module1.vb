@@ -5,20 +5,46 @@
 
         'Object of class
         Dim person1 As Person
+        'Dim person2 As Person
+
         person1 = New Person
-        person1.Name = "Ruchira"
-        person1.Age = 28
+        'person1.Name = "Ruchira"
+        'person1.Age = 28
         'person1.Email = "Ruchira@infosys.com"
-        Console.WriteLine(person1.Email)
         'person1.setName("Ruchira")
         'Console.WriteLine(person1.getName)
-        Console.WriteLine(person1.Name)
         'Console.WriteLine(person1.Age)
-        Console.ReadLine()
+        'Console.WriteLine(person1.Email)
+        'Console.WriteLine(person1.Name)
+        'Console.ReadLine()
 
         'Use of automatic properties
-        person1.Location = "Pune"
-        Console.WriteLine(person1.Location)
+        'person1.Location = "Pune"
+        'Console.WriteLine("Location of person1 is " & person1.Location)
+
+        'Use of parameterized constructor
+        'person2 = New Person("<empty>")
+
+        'Dim employee1 As Employee
+        'employee1 = New Employee
+        'employee1.Name = "Vijay"
+        'Console.WriteLine("Employee1's name is " & employee1.Name)
+        'Console.ReadLine()
+        'employee1.Walk()
+        'employee1.CanCode()
+
+        'Variable of base class
+        ' Object of child class
+        Dim person3 As Person
+        person3 = New Employee
+        person3.Walk()
+
+        'Variable of child class
+        ' Object of Base class
+        'Illegal
+        'Dim employee2 As Employee
+        'employee2 = New Person
+
 
         ''What is a Program?
         ''   Data <---> Logic (Bidirectional relationship)

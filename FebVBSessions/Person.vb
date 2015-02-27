@@ -49,11 +49,17 @@
 
     'Constructors
     Sub New()
-        Console.WriteLine("We are inside an empty constructor")
+        Console.WriteLine("We are inside an empty constructor of the Base class")
     End Sub
 
     Sub New(text As String)
-        Console.WriteLine("We are inside a parameterized constructor")
+        Console.WriteLine("We are inside a parameterized constructor of the base class")
+        Console.ReadLine()
+    End Sub
+
+    'Classes' Methods
+    Overridable Sub Walk()
+        Console.WriteLine("This is a person walking")
         Console.ReadLine()
     End Sub
 End Class
