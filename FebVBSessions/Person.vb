@@ -6,6 +6,8 @@
     Private _email As String = "Person@infosys.com"
     Private _age As Integer
 
+
+
     'Sub setName(value As String)
     '    If Not value = "" Then
     '        _name = value
@@ -45,4 +47,13 @@
     'Automatic properties
     Public Property Location As String
 
+    'Constructors
+    Sub New()
+        Console.WriteLine("We are inside an empty constructor")
+    End Sub
+
+    Sub New(text As String)
+        Console.WriteLine("We are inside a parameterized constructor")
+        Console.ReadLine()
+    End Sub
 End Class
