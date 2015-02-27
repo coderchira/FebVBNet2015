@@ -1,7 +1,25 @@
 ﻿Module Module1
     Sub Main()
         'LogicDemo.DoThisAsWell()
-        Module2.AddCollections()
+        'Module2.AddCollections()
+
+        'Object of class
+        Dim person1 As Person
+        person1 = New Person
+        person1.Name = "Ruchira"
+        person1.Age = 28
+        'person1.Email = "Ruchira@infosys.com"
+        Console.WriteLine(person1.Email)
+        'person1.setName("Ruchira")
+        'Console.WriteLine(person1.getName)
+        Console.WriteLine(person1.Name)
+        'Console.WriteLine(person1.Age)
+        Console.ReadLine()
+
+        'Use of automatic properties
+        person1.Location = "Pune"
+        Console.WriteLine(person1.Location)
+
         ''What is a Program?
         ''   Data <---> Logic (Bidirectional relationship)
         ''   Data
