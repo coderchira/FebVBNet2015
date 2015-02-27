@@ -67,7 +67,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Employee.vb" />
+    <Compile Include="IAnotherInterface.vb" />
+    <Compile Include="Interface1.vb" />
     <Compile Include="LogicDemo.vb" />
+    <Compile Include="Manager.vb" />
     <Compile Include="Module1.vb" />
     <Compile Include="Module2.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />

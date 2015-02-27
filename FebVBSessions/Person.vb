@@ -1,4 +1,6 @@
 ﻿Public Class Person
+    Implements IAnotherInterface
+
     'Class
     '   Responsibility = Logic + its data
     'Member variables /fields
@@ -61,5 +63,13 @@
     Overridable Sub Walk()
         Console.WriteLine("This is a person walking")
         Console.ReadLine()
+    End Sub
+
+    Public Sub Delete() Implements IAnotherInterface.Delete
+
+    End Sub
+
+    Public Sub render() Implements IAnotherInterface.render
+
     End Sub
 End Class
